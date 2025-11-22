@@ -1,16 +1,24 @@
-# React + Vite
+# ⏰ Digital Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Overview
 
-Currently, two official plugins are available:
+This is a dynamic and visually engaging **Digital Clock** application built using **ReactJS** functional components. It leverages the `useState` and `useEffect` Hooks to achieve real-time updates every second. The clock displays the time in a **12-Hour format (with AM/PM)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The design features a **themed background** with high-contrast, standard white text for excellent readability against a busy visual style.
 
-## React Compiler
+## 🔗 Live Application
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The clock is deployed and available for use here:
 
-## Expanding the ESLint configuration
+### [🚀 View Live Demo on Vercel](https://digital-clock-indol-beta.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Features
+
+* **Real-time Display:** Shows the current hour, minute, and second.
+* **12-Hour Format:** Displays time with the appropriate **AM/PM** designation.
+* **Date Display:** Shows the current day, month, and year.
+
+## 🔧 Tools Used
+
+* **ReactJS** (Functional Components, `useState`, `useEffect` Hooks)
+* **CSS** (for styling and background effects)
