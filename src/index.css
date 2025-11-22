@@ -29,6 +29,8 @@ body {
   color: hsl(0, 0%, 100%);
   font-size: 5em;
   padding: 10px 0px;
+  margin-top: 50vh;
+  margin-bottom: auto;
 }
 
 /* if your clock uses an element like .time or .ampm inside, ensure they inherit */
