@@ -9,7 +9,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Updated background properties */
   background: url(/public/totoro_3.jpeg); /* change if you want an image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* End of updated properties */
   overflow: auto;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
