@@ -26,6 +26,6 @@ function DigitalClock() {
     return (number < 10 ? "0" : "") + number;
   }
 
-  return <div className="dc-container">{formatTime()}</div>;
+  return <div className="clock">{formatTime()}</div>;
 }
 export default DigitalClock;
