@@ -21,17 +21,14 @@ body {
 
 /* clock wrapper */
 .clock {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.25rem 0.5rem;
-  background: #2f67d6; /* blue */
-  color: white;
-  font-weight: 700;
-  font-size: clamp(2rem, 6vw, 3.5rem); /* responsive size */
-  border-radius: 2px;
-  box-sizing: border-box;
-  z-index: 9999;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  width: 100vw;
+  color: hsl(0, 0%, 100%);
+  font-size: 5em;
+  padding: 10px 0px;
 }
 
 /* if your clock uses an element like .time or .ampm inside, ensure they inherit */
