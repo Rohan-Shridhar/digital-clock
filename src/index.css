@@ -1,22 +1,36 @@
+/* /mnt/data/index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-image: url("src/assets/totoro_3.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  /*FOR HAVING SOMETHING IN THE CENTER OF THE PAGE*/
   display: flex;
   align-items: center;
-  min-height: 100vh;
   justify-content: center;
+  background: white; /* change if you want an image */
+  overflow: auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
-.dc-container {
-  backdrop-filter: blur(10px);
-  text-align: center;
-  font-family: monospace;
-  font-weight: bold;
-  width: 100vw;
-  color: hsl(0, 0%, 100%);
-  font-size: 5em;
-  padding: 10px 0px;
+
+/* clock wrapper */
+.clock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  background: #2f67d6; /* blue */
+  color: white;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 3.5rem); /* responsive size */
+  border-radius: 2px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* if your clock uses an element like .time or .ampm inside, ensure they inherit */
+.clock .time, .clock .ampm {
+  margin: 0 0.25rem;
+  line-height: 1;
 }
