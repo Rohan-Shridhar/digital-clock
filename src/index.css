@@ -1,0 +1,22 @@
+body {
+  background-image: url("src/assets/totoro_3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /*FOR HAVING SOMETHING IN THE CENTER OF THE PAGE*/
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+.dc-container {
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  width: 100vw;
+  color: hsl(0, 0%, 100%);
+  font-size: 5em;
+  padding: 10px 0px;
+}
