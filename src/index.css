@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white; /* change if you want an image */
+  background: url(/public/totoro_3.jpeg); /* change if you want an image */
   overflow: auto;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
