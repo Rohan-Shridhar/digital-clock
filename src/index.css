@@ -28,8 +28,8 @@ body {
 .time-band {
   background: rgba(255, 255, 255, 0.1);
   width: 100vw;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   padding: 30px 80px;
   border-radius: 20px;
   text-align: center;
