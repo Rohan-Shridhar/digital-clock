@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import img1 from "/public/totoro_1.jpeg";
 import img2 from "/public/totoro_2.jpeg";
 import img3 from "/public/totoro_3.jpeg";
+import btn from "/public/btn.png";
 
 export default function BackgroundChanger() {
     const images = [img1, img2, img3];
@@ -13,10 +14,10 @@ export default function BackgroundChanger() {
         <div 
             className="background-changer"
             style={{backgroundImage: `url(${images[currentImageIndex]})`}}
-            onClick={changeBackground}>
-            <div className="overlay">
-                <h2>Click anywhere to change background</h2>
-            </div>
+            >
+            <button onClick={changeBackground}>
+                <img src={btn} title="Change Background" className="img-btn"/>
+            </button>
         </div>
     );
 }
