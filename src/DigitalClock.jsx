@@ -40,7 +40,9 @@ function DigitalClock() {
   return <div className="clock" 
               style={{backgroundImage: `url(${images[currentImageIndex]})`}}
               ><img  onClick={changeBackground} src={btn} title="Change Background" className="img-btn"/>
-              {formatTime()}
+              <div className="time-band">
+                {formatTime()}
+              </div>
           </div>;
 }
 export default DigitalClock;
