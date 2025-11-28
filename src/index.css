@@ -45,8 +45,8 @@ body {
 }
 
 .img-btn {
-  max-width:50px;
-  max-height:50px;
+  max-width:25px;
+  max-height:25px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center; 
