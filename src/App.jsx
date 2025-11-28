@@ -1,5 +1,4 @@
 import DigitalClock from "./DigitalClock.jsx";
-import BackgroundChanger from "./BackgroundChanger.jsx";
 function App() {
   return (
     <>
