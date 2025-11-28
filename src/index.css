@@ -12,7 +12,6 @@ body {
 
 /* clock wrapper */
 .clock {
-  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
@@ -24,12 +23,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.time-band {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100vw;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 30px 80px;
+  border-radius: 20px;
   text-align: center;
   font-family: monospace;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
   font-size: 5em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* if your clock uses an element like .time or .ampm inside, ensure they inherit */
