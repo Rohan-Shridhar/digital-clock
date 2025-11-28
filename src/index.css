@@ -38,3 +38,12 @@ body {
   margin: 0 0.25rem;
   line-height: 1;
 }
+
+.footer{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
