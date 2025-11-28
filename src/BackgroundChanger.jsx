@@ -14,7 +14,7 @@ export default function BackgroundChanger() {
         <div 
             className="background-changer"
             style={{backgroundImage: `url(${images[currentImageIndex]})`}}
-            >
+            >   
             <button onClick={changeBackground}>
                 <img src={btn} title="Change Background" className="img-btn"/>
             </button>
