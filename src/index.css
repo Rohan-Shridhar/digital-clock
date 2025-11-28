@@ -6,37 +6,64 @@ html, body, #root {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Updated background properties */
-  background: url(/public/totoro_3.jpeg); /* change if you want an image */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* End of updated properties */
   overflow: auto;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 /* clock wrapper */
 .clock {
-  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-band {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100vw;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 30px 80px;
+  border-radius: 20px;
   text-align: center;
   font-family: monospace;
   font-weight: bold;
-  width: 100vw;
   color: hsl(0, 0%, 100%);
   font-size: 5em;
-  padding: 10px 0px;
-  margin-top: 40vh;
-  margin-bottom: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* if your clock uses an element like .time or .ampm inside, ensure they inherit */
 .clock .time, .clock .ampm {
   margin: 0 0.25rem;
   line-height: 1;
+}
+
+
+.img-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+
+.img-btn:hover {
+  transform: scale(1.1);
 }
 
 footer{
